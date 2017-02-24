@@ -5,25 +5,27 @@ var result = (function(sentence){
   console.log(row);
   console.log(sentence);
   var newArray =[]
-
-
-        for(var j=0;j<sentence.length; j+=row){
+  var count = 0
+for(var i=1;i<column;i++){
+        for(var j=count;j<sentence.length; j+=row){
           newArray.push(sentence[j]);}
+          var count= count+1;
+        }
 
-            for(var j=1;j<sentence.length; j+=row){
-              newArray.push(sentence[j])}
-
-                for(var j=2;j<sentence.length; j+=row){
-                  newArray.push(sentence[j])
-              }  for(var j=3;j<sentence.length; j+=row){
-                  newArray.push(sentence[j]);}
-
-                    for(var j=4;j<sentence.length; j+=row){
-                      newArray.push(sentence[j])}
-
-                        for(var j=6;j<sentence.length; j+=row){
-                          newArray.push(sentence[j])
-                      }
+            // for(var j=1;j<sentence.length; j+=row){
+            //   newArray.push(sentence[j])}
+            //
+            //     for(var j=2;j<sentence.length; j+=row){
+            //       newArray.push(sentence[j])
+            //   }  for(var j=3;j<sentence.length; j+=row){
+            //       newArray.push(sentence[j]);}
+            //
+            //         for(var j=4;j<sentence.length; j+=row){
+            //           newArray.push(sentence[j])}
+            //
+            //             for(var j=6;j<sentence.length; j+=row){
+            //               newArray.push(sentence[j])
+            //           }
 
       console.log(newArray);
     });
